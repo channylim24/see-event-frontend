@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+$primary: #214457;
+$secondary: #f2d555;
+$info: #3e89ae;
+$success: #4e9a51;
+$warning: #f8d277;
+$error: #d74545;
+$black: #000000;
+$gun: #373737;
+$ash: #999999;
+$white: #ffffff;
+$mint: #f0f2e9;
+$cloud: #eceeef;
+$cream: #f9f5e4;
+$vogue: #e3e3e3;
+$wheat: #f8f8f8;
+
+@mixin theme($size: 16px, $weight: 400, $color: $gun) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  font-family: "Noto Sans", sans-serif;
+}
