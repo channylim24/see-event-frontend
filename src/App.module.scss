@@ -1,5 +1,5 @@
-@use "./base";
-
-h1 {
-  @include base.theme;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
