@@ -1,0 +1,42 @@
+@use "../base";
+
+@mixin input($height, $border-radius) {
+  height: $height;
+  width: 100%;
+  border-radius: $border-radius;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  border: 1px solid #b4b4bb;
+  @include input($height: 2.5rem, $border-radius: 10px);
+  @include base.theme;
+
+  &__field {
+    all: unset;
+    height: 100%;
+    width: calc(100% - 2rem);
+  }
+
+  &__eye {
+    all: unset;
+    cursor: pointer;
+    height: 100%;
+    color: base.$ash;
+  }
+}
+
+.search {
+  border: 1px solid #f0f0f1;
+  @include input($height: 3rem, $border-radius: 99px);
+  @include base.theme;
+
+  &__browse {
+    all: unset;
+    cursor: pointer;
+    height: 100%;
+    color: #787885;
+  }
+}
